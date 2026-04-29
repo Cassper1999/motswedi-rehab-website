@@ -1320,4 +1320,15 @@ footer hr {
     opacity: 0.4;
   }
 
+}.hero {
+  padding-top: 40px !important;
+}
+.hero .tagline,
+.hero small {
+  margin-top: 0 !important;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 20px !important;
+  }
 }
