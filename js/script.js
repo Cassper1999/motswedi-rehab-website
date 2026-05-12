@@ -64,3 +64,17 @@ statCards.forEach(card => statObserver.observe(card));
 =======
 statCards.forEach(card => statObserver.observe(card));
 >>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
+document.addEventListener("mousemove", function(e) {
+  const dot = document.createElement("span");
+  dot.className = "cursor-trail";
+  dot.style.left = e.clientX + "px";
+  dot.style.top = e.clientY + "px";
+  const colors = ["#064e3b", "#c79a2b", "#ffffff"];
+  const color = colors[Math.floor(Math.random() * colors.length)];
+  dot.style.background = color;
+  dot.style.boxShadow = `0 0 16px ${color}`;
+  document.body.appendChild(dot);
+  setTimeout(() => {
+    dot.remove();
+  }, 700);
+});
