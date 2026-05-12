@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -303,6 +304,313 @@ section {
 * {
   transition: color 0.2s ease, background 0.2s ease;
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f3efe7;
+  color: #1d1d1b;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 24px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(243,239,231,0.8);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.brand {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.navlinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navlinks a {
+  color: #1d1d1b;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navbtn {
+  border: 1px solid #1d1d1b;
+  padding: 12px 20px;
+  border-radius: 40px;
+}
+.hero {
+  
+  padding: 160px 7% 80px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  align-items: end;
+  gap: 60px;
+  background:
+    radial-gradient(circle at 75% 30%, rgba(214,164,88,0.35), transparent 28%),
+    linear-gradient(120deg, #f3efe7 0%, #e8ddcd 100%);
+}
+.tag,
+.small {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #8a5a23;
+  font-weight: bold;
+}
+.hero h1 {
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 0.92;
+  letter-spacing: -5px;
+  margin: 25px 0;
+  max-width: 1050px;
+}
+.hero p {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4b463d;
+}
+.actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.primary {
+  background: #1d1d1b;
+  color: #fff;
+}
+.ghost {
+  border: 1px solid #1d1d1b;
+  color: #1d1d1b;
+}
+.hero-card {
+  background: #1d1d1b;
+  color: white;
+  border-radius: 36px;
+  padding: 40px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+}
+.hero-card h3 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+.split {
+  padding: 120px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.split h2,
+.services h2,
+.statement h2,
+.contact h2 {
+  font-size: clamp(38px, 5vw, 76px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-top: 18px;
+}
+.split p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #514b42;
+}
+.dark {
+  background: #1d1d1b;
+  color: #f3efe7;
+  overflow: hidden;
+}
+.marquee {
+  display: flex;
+  gap: 70px;
+  padding: 40px 0;
+  white-space: nowrap;
+  animation: move 20s linear infinite;
+}
+.marquee span {
+  font-size: 34px;
+  font-style: italic;
+}
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.services {
+  padding: 120px 7%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 50px;
+}
+.card {
+  background: #fffaf0;
+  padding: 36px;
+  
+  border-radius: 34px;
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: 0.35s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: #1d1d1b;
+  color: white;
+}
+.card b {
+  color: #b7792b;
+}
+.card h3 {
+  font-size: 28px;
+  margin: 45px 0 18px;
+}
+.card p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+.impact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #e1d2bd;
+  padding: 80px 7%;
+  gap: 20px;
+}
+.impact div {
+  border-left: 1px solid rgba(0,0,0,0.25);
+  padding-left: 24px;
+}
+.impact h2 {
+  font-size: 44px;
+}
+.statement {
+  padding: 130px 7%;
+  background: #1d1d1b;
+  color: #f3efe7;
+  text-align: center;
+}
+.statement p {
+  margin-top: 25px;
+  color: #d6a458;
+}
+.contact {
+  padding: 120px 7%;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(214,164,88,0.35), transparent 35%), #f3efe7;
+}
+.contact p {
+  max-width: 650px;
+  margin: 25px auto 35px;
+  font-size: 22px;
+  color: #514b42;
+}
+footer {
+  padding: 30px 7%;
+  background: #1d1d1b;
+  color: #f3efe7;
+  text-align: center;
+}
+@media(max-width: 900px) {
+  .navlinks {
+    display: none;
+  }
+  .hero,
+  .split,
+  .grid,
+  .impact {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+}
+/* ===== PREMIUM POLISH ===== */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  letter-spacing: -0.2px;
+}
+/* NAVBAR IMPROVEMENT */
+nav {
+  padding: 18px 7%;
+  transition: all 0.3s ease;
+}
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+/* HERO REFINEMENT */
+.hero h1 {
+  line-height: 1.05;
+  letter-spacing: -2px;
+  max-width: 900px;
+}
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+/* BUTTON POLISH */
+.btn {
+  transition: all 0.25s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+/* SECTION SPACING */
+section {
+  padding: 90px 7%;
+}
+/* CARDS UPGRADE */
+.card {
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+/* GRID CLEANUP */
+.grid {
+  gap: 18px;
+}
+/* IMPACT SECTION CLEAN */
+.impact h2 {
+  font-size: 52px;
+}
+/* CONTACT CLEAN */
+.contact p {
+  font-size: 18px;
+}
+/* SMOOTH TRANSITIONS */
+* {
+  transition: color 0.2s ease, background 0.2s ease;
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 .dark {
   padding: 40px 0 !important;
 }
@@ -311,7 +619,11 @@ section {
 }
 .marquee span {
   font-size: 28px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== COLOR UPGRADE ===== */
 body {
   background: #f6f4ef;
@@ -361,7 +673,11 @@ nav {
 .contact {
   background: linear-gradient(135deg, #145c43, #0f3d2e);
   color: white;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== PREMIUM STARTUP LOADER ===== */
 #loader {
   position: fixed;
@@ -410,7 +726,11 @@ nav {
     visibility: hidden;
     transform: translateY(-100%);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== HERO CARD FIX (Since 1988) ===== */
 .hero-card {
   background: linear-gradient(135deg, #145c43, #0f3d2e);
@@ -428,7 +748,11 @@ nav {
   font-size: 16px;
   color: rgba(255,255,255,0.85);
   line-height: 1.5;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== CONTACT SECTION FIX ===== */
 .contact {
   background: linear-gradient(135deg, #145c43, #0f3d2e);
@@ -450,7 +774,11 @@ nav {
 }
 .contact .btn:hover {
   background: #f1f5f3;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== VISUAL IMAGE UPGRADE ===== */
 .hero {
   background:
@@ -487,8 +815,13 @@ nav {
 }
 .card:hover::before {
   opacity: 0.75;
+<<<<<<< HEAD
 }
 
+=======
+}
+
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== WORKING IMAGE SYSTEM ===== */
 /* HERO IMAGE */
 .hero {
@@ -521,8 +854,13 @@ nav {
 .card:nth-child(3)::before { background-image: url("../images/therapy.jpg"); }
 .card:nth-child(4)::before { background-image: url("../images/community.jpg"); }
 .card:nth-child(5)::before { background-image: url("../images/care.jpg"); }
+<<<<<<< HEAD
 .card:nth-child(6)::before { background-image: url("../images/hero-fountain.png"); }
 
+=======
+.card:nth-child(6)::before { background-image: url("../images/hero-fountain.png"); }
+
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FIX SERVICE CARD IMAGE CROPPING ===== */
 .card {
   padding-top: 260px !important;
@@ -531,7 +869,11 @@ nav {
   height: 220px !important;
   background-size: cover !important;
   background-position: center center !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== SERVICE CARD IMAGE + HEIGHT FIX ===== */
 .card {
   padding: 0 34px 34px 34px !important;
@@ -552,7 +894,11 @@ nav {
 }
 .card p {
   margin: 0 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== ABOUT IMAGE BAND ===== */
 .split {
   position: relative;
@@ -575,7 +921,11 @@ nav {
 .split > * {
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FIX ABOUT IMAGE OVERLAP ===== */
 .split::before {
   display: none !important;
@@ -588,7 +938,11 @@ nav {
     linear-gradient(rgba(246,244,239,0.88), rgba(246,244,239,0.88)),
     url("../images/about.jpg") center/cover no-repeat;
   border-radius: 0 0 40px 40px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== THEME GLITTER CURSOR ===== */
 .glitter {
   position: fixed;
@@ -610,8 +964,13 @@ nav {
     opacity: 0;
     transform: scale(0.2) translateY(-12px);
   }
+<<<<<<< HEAD
 }
 
+=======
+}
+
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FINAL HERO (MATCH DESIGN) ===== */
 .hero {
   min-height: 90vh;
@@ -665,8 +1024,13 @@ nav {
 /* REMOVE OLD HERO STYLES */
 header {
   background: none !important;
+<<<<<<< HEAD
 }
 
+=======
+}
+
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FOUNTAIN IMAGE ON CONTACT SECTION ===== */
 .contact {
   background:
@@ -688,7 +1052,11 @@ header {
 .contact .btn {
   background: white !important;
   color: #145c43 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FIX CONTACT BUTTON SIZE ===== */
 .contact .btn {
   width: auto !important;
@@ -700,7 +1068,11 @@ header {
 /* Center it properly */
 .contact {
   text-align: center !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== RESTORE HERO BACKGROUND IMAGE ===== */
 .hero {
   background:
@@ -709,7 +1081,11 @@ header {
   background-size: cover !important;
   background-position: center right !important;
   background-repeat: no-repeat !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FIX HERO OPACITY (SOFT LIKE BELOW) ===== */
 .hero {
   background:
@@ -727,14 +1103,22 @@ header {
 .hero h1,
 .hero p {
   color: #1f2933 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FIX HERO TOP SPACING ===== */
 .hero {
   padding-top: 140px !important;
 }
 .hero .eyebrow {
   margin-top: 10px !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FIX HERO CARD READABILITY ===== */
 .hero-card {
   background: rgba(20, 92, 67, 0.95) !important;
@@ -745,7 +1129,11 @@ header {
 }
 .hero-card p {
   color: rgba(255,255,255,0.9) !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== PREMIUM NAVBAR ===== */
 nav {
   position: sticky;
@@ -801,7 +1189,11 @@ nav {
 .navbtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(20,92,67,0.35);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== REMOVE HERO YEAR TILE ===== */
 .hero-card {
   display: none !important;
@@ -811,7 +1203,11 @@ nav {
 }
 .hero .eyebrow {
   margin-top: 0 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== ABOUT SINCE 1988 BADGE ===== */
 .about-badge {
   grid-column: 1 / -1;
@@ -831,7 +1227,11 @@ nav {
 .about-badge span {
   color: rgba(255,255,255,0.9);
   line-height: 1.5;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== MOVE ABOUT BADGE TO RIGHT SIDE ===== */
 .about-badge {
   grid-column: 2 !important;
@@ -857,7 +1257,11 @@ nav {
 .split > p {
   grid-column: 2 !important;
   grid-row: 2 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== REMOVE DEAD SPACE BETWEEN SECTIONS ===== */
 #services {
   padding-bottom: 40px !important;
@@ -872,7 +1276,11 @@ nav {
 /* tighten stat section */
 .impact {
   padding: 60px 7% !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== ANIMATED IMPACT NUMBERS ===== */
 .impact div {
   transition: transform 0.3s ease, background 0.3s ease;
@@ -898,7 +1306,11 @@ nav {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.7s ease;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== PLAYSTATION-STYLE FOOTER, MOTSWEDI THEME ===== */
 .footer {
   background: #0f3d2e;
@@ -955,7 +1367,11 @@ nav {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== REMOVE TICKER + DEAD SPACE ===== */
 .dark {
   display: none !important;
@@ -969,7 +1385,11 @@ nav {
 }
 #services {
   padding-top: 60px !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== MISSION SECTION BACKGROUND IMAGE ===== */
 .statement {
   position: relative;
@@ -980,7 +1400,11 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== BLEND BETWEEN SECTIONS ===== */
 /* fade bottom of mission section */
 .statement {
@@ -1009,7 +1433,11 @@ nav {
   height: 120px;
   background: linear-gradient(to bottom, #0f3d2e 0%, rgba(15,61,46,0) 100%);
   pointer-events: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== SOFT BLEND (SUBTLE, PREMIUM) ===== */
 /* top section fade down */
 .hero::after {
@@ -1042,7 +1470,11 @@ nav {
     rgba(246,244,239,0) 100%
   );
   pointer-events: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== CLEAN SOFT TRANSITION BETWEEN HERO AND ABOUT ===== */
 .hero {
   margin-bottom: 0 !important;
@@ -1062,7 +1494,11 @@ nav {
 }
 .split::before {
   display: none !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== REMOVE WHITE BOX EFFECT ===== */
 .hero::after {
   height: 40px !important;
@@ -1082,7 +1518,11 @@ nav {
 /* remove any accidental overlay strips */
 .hero {
   background-color: transparent !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== REMOVE ALL SEAM LINES COMPLETELY ===== */
 .hero::after {
   display: none !important;
@@ -1112,7 +1552,11 @@ nav {
     rgba(246,244,239,0.6) 100%
   );
   pointer-events: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== PERFECT BLEND (NO LINE AT ALL) ===== */
 /* make both sections SAME base color */
 .hero,
@@ -1133,7 +1577,11 @@ nav {
 .hero {
   background-size: cover !important;
   background-position: center !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== RESTORE BACKGROUND IMAGE (ABOUT SECTION) ===== */
 .split {
   background:
@@ -1149,7 +1597,11 @@ nav {
 .hero,
 .split {
   background-color: transparent !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FORCE ABOUT BACKGROUND IMAGE ===== */
 .split {
   background-image: url("../images/about.jpg") !important;
@@ -1161,7 +1613,11 @@ nav {
   background-color: rgba(246,244,239,0.75);
   margin-top: -80px !important;
   padding-top: 140px !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== MATCH ABOUT BACKGROUND TO HERO (LIGHTER OVERLAY) ===== */
 .split {
   background-image: 
@@ -1170,13 +1626,21 @@ nav {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== SOFTEN ABOUT BACKGROUND ===== */
 .split {
   background:
     linear-gradient(rgba(246,244,239,0.72), rgba(246,244,239,0.72)),
     url("../images/about.jpg") center/cover no-repeat !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FORCE SOFTER ABOUT IMAGE OVERLAY ===== */
 section.split {
   background-image:
@@ -1187,7 +1651,11 @@ section.split {
   background-repeat: no-repeat !important;
   background-color: transparent !important;
   background-blend-mode: normal !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== LIGHT GOLD FOOTER ===== */
 footer {
   background: #E8D8A8 !important; /* soft gold */
@@ -1212,7 +1680,11 @@ footer hr {
 /* bottom text */
 footer p {
   color: #374151 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== MATCH FOOTER TO "PARTNER WITH US" GOLD ===== */
 footer {
   background: #C79A2B !important; /* rich gold */
@@ -1234,7 +1706,11 @@ footer hr {
 }
 footer p {
   color: #111827 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* ===== FOOTER WHITE TEXT ===== */
 footer {
   color: white !important;
@@ -1255,6 +1731,7 @@ footer a:hover {
 /* divider line */
 footer hr {
   border-color: rgba(255,255,255,0.3) !important;
+<<<<<<< HEAD
 }
 /* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
@@ -1335,3 +1812,6 @@ footer hr {
 .hero {
   padding: 30px 20px !important;
 }
+=======
+}
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb

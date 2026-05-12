@@ -1,7 +1,11 @@
 ﻿window.addEventListener("scroll", () => {
   document.querySelector("nav").style.boxShadow =
     window.scrollY > 30 ? "0 12px 40px rgba(0,0,0,0.08)" : "none";
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* Theme glitter mouse trail */
 document.addEventListener("mousemove", function(e) {
   const glitter = document.createElement("span");
@@ -16,7 +20,11 @@ document.addEventListener("mousemove", function(e) {
   setTimeout(() => {
     glitter.remove();
   }, 700);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
 /* Impact number scroll animation */
 const statCards = document.querySelectorAll(".impact div");
 statCards.forEach(card => {
@@ -51,4 +59,8 @@ const statObserver = new IntersectionObserver(entries => {
     }
   });
 }, { threshold: 0.35 });
+<<<<<<< HEAD
 statCards.forEach(card => statObserver.observe(card));
+=======
+statCards.forEach(card => statObserver.observe(card));
+>>>>>>> ea5664c10ee530d2ba7ca162332ad7bf9aacadeb
