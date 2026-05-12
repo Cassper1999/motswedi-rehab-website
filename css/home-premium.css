@@ -284,3 +284,8 @@ display:block;
 object-fit:contain;
 }
 
+
+.info-bar{
+  display:none !important;
+}
+
