@@ -1,0 +1,130 @@
+﻿html, body.home-page {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+body.home-page * {
+  box-sizing: border-box;
+}
+.clean-nav {
+  height: 86px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(246,244,239,0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: relative;
+  z-index: 10;
+}
+.clean-logo {
+  color: #0f5c43;
+  font-weight: 800;
+  font-size: 22px;
+  text-decoration: none;
+}
+.clean-nav nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.clean-nav nav a {
+  color: #17202c;
+  text-decoration: none;
+  font-weight: 500;
+}
+.clean-btn {
+  background: #0f5c43;
+  color: white !important;
+  padding: 12px 22px;
+  border-radius: 999px;
+  box-shadow: 0 10px 25px rgba(15,92,67,0.25);
+}
+.clean-hero {
+  height: calc(100vh - 86px);
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+  background:
+    linear-gradient(90deg, rgba(246,244,239,0.92) 0%, rgba(246,244,239,0.78) 42%, rgba(246,244,239,0.28) 100%),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center right;
+}
+.clean-hero-content {
+  max-width: 760px;
+}
+.clean-hero-content p {
+  color: #c79a2b;
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+.clean-hero-content h1 {
+  font-size: clamp(48px, 6vw, 86px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  color: #17202c;
+  margin: 0 0 28px;
+}
+.clean-hero-content span {
+  display: block;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #334155;
+  max-width: 720px;
+}
+.clean-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 34px;
+}
+.clean-actions a {
+  text-decoration: none;
+  padding: 15px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: #0f5c43;
+  color: white;
+}
+.clean-actions a:nth-child(2) {
+  background: white;
+  color: #0f5c43;
+  border: 1px solid #0f5c43;
+}
+@media(max-width: 900px) {
+  body.home-page {
+    overflow: auto !important;
+    height: auto !important;
+  }
+  .clean-nav {
+    height: auto;
+    padding: 22px;
+    align-items: flex-start;
+  }
+  .clean-nav nav {
+    display: none;
+  }
+  .clean-hero {
+    min-height: calc(100vh - 80px);
+    height: auto;
+    padding: 50px 24px;
+    background-position: center;
+  }
+  .clean-hero-content h1 {
+    font-size: 44px;
+    letter-spacing: -1px;
+  }
+  .clean-hero-content span {
+    font-size: 17px;
+  }
+  .clean-actions {
+    flex-direction: column;
+  }
+  .clean-actions a {
+    text-align: center;
+  }
+}
