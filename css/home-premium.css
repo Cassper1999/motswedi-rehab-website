@@ -308,3 +308,10 @@ object-fit:contain;
     transform: scale(0.2) translateY(-12px);
   }
 }
+.page-hero,
+.about-content {
+  margin-top: 0 !important;
+}
+body:not(:has(.home-hero)) .main-nav {
+  position: relative !important;
+}
